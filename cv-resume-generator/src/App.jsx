@@ -8,13 +8,13 @@ import './App.css';
 function App() {
   const [personalInfo, setPersonalInfo] = useState({ name: '', email: '', phone: '' });
   const [education, setEducation] = useState({ school: '', title: '', date: '' });
-  const [experience, setExperience] = useState({
-    company: '', position: '', responsibilities: '', from: '', until: ''
-  });
+  const [experience, setExperience] = useState([
+    { company: '', position: '', responsibilities: '', from: '', until: '' }
+  ]);
 
   return (
     <div className="app">
-      <h1>CV Builder</h1>
+      <h1>CV / Resume Builder</h1>
       <p className="app-subtitle">Fill in your details, then preview and export your CV below.</p>
 
       <div className="form-sections">

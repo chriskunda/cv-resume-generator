@@ -10,9 +10,19 @@ function ClassicTemplate({ personalInfo, education, experience }) {
       <hr className="rule" />
       <section>
         <p className="cv-label">Experience</p>
-        <p className="cv-role">{experience.position}, {experience.company}</p>
-        <p className="cv-dates">{experience.from} – {experience.until}</p>
-        <p>{experience.responsibilities}</p>
+        {experience && experience.length > 0 ? (
+          experience
+            .filter((item) => item.position || item.company || item.responsibilities || item.from || item.until)
+            .map((item, index) => (
+              <div key={index} className="experience-entry">
+                <p className="cv-role">{item.position}, {item.company}</p>
+                <p className="cv-dates">{item.from} – {item.until}</p>
+                <p>{item.responsibilities}</p>
+              </div>
+            ))
+        ) : (
+          <p>No experience added yet.</p>
+        )}
       </section>
       <section>
         <p className="cv-label">Education</p>
