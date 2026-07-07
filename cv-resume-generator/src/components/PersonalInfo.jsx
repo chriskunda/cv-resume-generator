@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import '../styles/PersonalInfo.css';
+import '../styles/Card.css';
 
 function PersonalInfo() {
   const [formData, setFormData] = useState({
