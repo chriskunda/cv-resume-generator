@@ -14,7 +14,7 @@ function MinimalTemplate({ personalInfo, education, experience }) {
             .map((item, index) => (
               <div key={index} className="experience-entry">
                 <p className="cv-role">{item.position} at {item.company}</p>
-                <p className="cv-dates">{item.from} – {item.until}</p>
+                <p className="cv-dates">{item.from} — {item.until}</p>
                 <p>{item.responsibilities}</p>
               </div>
             ))
