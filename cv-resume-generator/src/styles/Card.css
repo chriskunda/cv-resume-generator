@@ -1,0 +1,88 @@
+.card {
+  background: #ffffff;
+  border: 1px solid var(--hairline);
+  border-radius: 3px;
+  padding: 1.75rem 1.85rem;
+  margin-bottom: 1.5rem;
+  max-width: 440px;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.card h2 {
+  font-family: 'Fraunces', serif;
+  color: var(--ink);
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin: 0 0 1.1rem;
+}
+
+.card input,
+.card textarea {
+  display: block;
+  width: 100%;
+  padding: 0.55rem 0.15rem;
+  margin-bottom: 1.1rem;
+  border: none;
+  border-bottom: 1.5px solid var(--hairline);
+  font-family: inherit;
+  font-size: 0.95rem;
+  color: var(--ink);
+  background: transparent;
+}
+
+.card input:focus,
+.card textarea:focus {
+  outline: none;
+  border-bottom-color: var(--cobalt);
+}
+
+.card input::placeholder,
+.card textarea::placeholder {
+  color: #A7AEBD;
+}
+
+.card textarea {
+  resize: vertical;
+  min-height: 4.5rem;
+}
+
+.date-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.card button {
+  background: var(--ink);
+  color: var(--paper);
+  border: none;
+  padding: 0.6rem 1.4rem;
+  border-radius: 2px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.card button:hover {
+  background: var(--cobalt);
+}
+
+.display-name {
+  font-family: 'Fraunces', serif;
+  font-weight: 600;
+  font-size: 1.15rem;
+  color: var(--ink);
+  margin: 0 0 0.3rem;
+}
+
+.display-view p {
+  margin: 0.2rem 0;
+}
+
+.muted {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.78rem;
+  letter-spacing: 0.03em;
+  color: var(--slate);
+}
