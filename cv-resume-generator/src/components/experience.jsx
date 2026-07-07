@@ -10,9 +10,12 @@ const blankExperience = {
   isEditing: true
 };
 
+const isEmptyExperience = (item) =>
+  !item.company && !item.position && !item.responsibilities && !item.from && !item.until;
+
 function Experience({ data, onSave }) {
   const initialItems = data.length
-    ? data.map((item) => ({ ...item, isEditing: false }))
+    ? data.map((item) => ({ ...item, isEditing: isEmptyExperience(item) }))
     : [{ ...blankExperience }];
 
   const [items, setItems] = useState(initialItems);
@@ -28,6 +31,11 @@ function Experience({ data, onSave }) {
 
   function handleSave(index, e) {
     e.preventDefault();
+
+    if (isEmptyExperience(items[index])) {
+      return;
+    }
+
     setItems((prev) => {
       const next = prev.map((item, i) => (i === index ? { ...item, isEditing: false } : item));
       onSave(next.map(({ isEditing, ...rest }) => rest));
