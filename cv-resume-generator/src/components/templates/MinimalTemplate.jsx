@@ -1,4 +1,4 @@
-import '../../styles/templates.css';
+import '../../styles/template.css';
 
 function MinimalTemplate({ personalInfo, education, experience }) {
   return (

@@ -1,4 +1,4 @@
-import '../../styles/templates.css';
+import '../../styles/template.css';
 
 function ClassicTemplate({ personalInfo, education, experience }) {
   return (

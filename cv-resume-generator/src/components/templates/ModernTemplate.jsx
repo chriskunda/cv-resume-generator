@@ -1,4 +1,4 @@
-import '../../styles/templates.css';
+import '../../styles/template.css';
 
 function ModernTemplate({ personalInfo, education, experience }) {
   const initials = personalInfo.name

@@ -1,27 +1,152 @@
-.cv-role { font-weight: 600; color: var(--ink); margin: 0 0 0.15rem; }
-.cv-dates { font-family: 'IBM Plex Mono', monospace; font-size: 0.75rem; letter-spacing: 0.03em; color: var(--slate); margin: 0 0 0.5rem; }
-.cv-label { font-family: 'IBM Plex Mono', monospace; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--cobalt); margin: 0 0 0.6rem; }
+/* -- Typography utilities -------------------------------------------------- */
 
-/* Modern: sidebar layout */
-.template-modern { display: flex; width: 210mm; min-height: 297mm; background: white; font-family: 'IBM Plex Sans', sans-serif; }
-.modern-sidebar { background: var(--ink); color: var(--paper); width: 34%; padding: 3rem 1.75rem; }
-.modern-monogram { width: 56px; height: 56px; border: 1.5px solid var(--cobalt-light); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Fraunces', serif; font-size: 1.3rem; margin-bottom: 1.5rem; }
-.modern-sidebar h1 { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; margin: 0 0 1rem; line-height: 1.25; }
-.modern-sidebar p { font-size: 0.85rem; color: #C7D0E0; margin: 0.2rem 0; }
-.modern-main { width: 66%; padding: 3rem 2.25rem; }
-.modern-main .cv-label { border-bottom: 1px solid var(--hairline); padding-bottom: 0.4rem; }
-.modern-main section { margin-bottom: 1.75rem; }
+.cv-role {
+    font-weight: 600;
+    color: var(--ink);
+    margin: 0 0 0.15rem;
+}
 
-/* Classic: centered letterhead */
-.template-classic { width: 210mm; min-height: 297mm; padding: 3.5rem 3rem; font-family: 'IBM Plex Sans', sans-serif; background: white; color: var(--ink); }
-.template-classic header { text-align: center; }
-.template-classic h1 { font-family: 'Fraunces', serif; font-weight: 600; font-size: 2rem; margin: 0 0 0.4rem; }
-.template-classic .contact-line { font-family: 'IBM Plex Mono', monospace; font-size: 0.78rem; color: var(--slate); }
-.template-classic .rule { border: none; border-top: 1px solid var(--ink); width: 60px; margin: 1.75rem auto; }
-.template-classic section { margin-bottom: 1.75rem; }
+.cv-dates {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.75rem;
+    letter-spacing: 0.03em;
+    color: var(--slate);
+    margin: 0 0 0.5rem;
+}
 
-/* Minimal: left-aligned, generous whitespace */
-.template-minimal { width: 210mm; min-height: 297mm; padding: 3.5rem; font-family: 'IBM Plex Sans', sans-serif; background: white; color: var(--ink); }
-.template-minimal h1 { font-family: 'Fraunces', serif; font-weight: 500; font-size: 2.4rem; margin: 0 0 0.3rem; }
-.template-minimal .contact-line { font-family: 'IBM Plex Mono', monospace; font-size: 0.78rem; color: var(--cobalt); margin-bottom: 2.5rem; }
-.template-minimal .block { margin-bottom: 1.75rem; padding-left: 1rem; border-left: 2px solid var(--hairline); }
+.cv-label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--cobalt);
+    margin: 0 0 0.6rem;
+}
+
+/* -- Modern template ------------------------------------------------------ */
+
+.template-modern {
+    display: flex;
+    width: 210mm;
+    min-height: 297mm;
+    background: white;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.modern-sidebar {
+    background: var(--ink);
+    color: var(--paper);
+    width: 34%;
+    padding: 3rem 1.75rem;
+}
+
+.modern-monogram {
+    width: 56px;
+    height: 56px;
+    border: 1.5px solid var(--cobalt-light);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Fraunces', serif;
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+}
+
+.modern-sidebar h1 {
+    font-family: 'Fraunces', serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0 0 1rem;
+    line-height: 1.25;
+}
+
+.modern-sidebar p {
+    font-size: 0.85rem;
+    color: #C7D0E0;
+    margin: 0.2rem 0;
+}
+
+.modern-main {
+    width: 66%;
+    padding: 3rem 2.25rem;
+}
+
+.modern-main .cv-label {
+    border-bottom: 1px solid var(--hairline);
+    padding-bottom: 0.4rem;
+}
+
+.modern-main section {
+    margin-bottom: 1.75rem;
+}
+
+/* -- Classic template ------------------------------------------------------ */
+
+.template-classic {
+    width: 210mm;
+    min-height: 297mm;
+    padding: 3.5rem 3rem;
+    font-family: 'IBM Plex Sans', sans-serif;
+    background: white;
+    color: var(--ink);
+}
+
+.template-classic header {
+    text-align: center;
+}
+
+.template-classic h1 {
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0 0 0.4rem;
+}
+
+.template-classic .contact-line {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.78rem;
+    color: var(--slate);
+}
+
+.template-classic .rule {
+    border: none;
+    border-top: 1px solid var(--ink);
+    width: 60px;
+    margin: 1.75rem auto;
+}
+
+.template-classic section {
+    margin-bottom: 1.75rem;
+}
+
+/* -- Minimal template ------------------------------------------------------ */
+
+.template-minimal {
+    width: 210mm;
+    min-height: 297mm;
+    padding: 3.5rem;
+    font-family: 'IBM Plex Sans', sans-serif;
+    background: white;
+    color: var(--ink);
+}
+
+.template-minimal h1 {
+    font-family: 'Fraunces', serif;
+    font-size: 2.4rem;
+    font-weight: 500;
+    margin: 0 0 0.3rem;
+}
+
+.template-minimal .contact-line {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.78rem;
+    color: var(--cobalt);
+    margin-bottom: 2.5rem;
+}
+
+.template-minimal .block {
+    margin-bottom: 1.75rem;
+    padding-left: 1rem;
+    border-left: 2px solid var(--hairline);
+}
