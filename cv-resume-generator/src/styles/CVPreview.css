@@ -1,0 +1,59 @@
+.preview-section {
+  margin-top: 3rem;
+}
+
+.preview-section > h2 {
+  font-family: 'Fraunces', serif;
+  color: var(--ink);
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.template-picker {
+  display: flex;
+  gap: 0.6rem;
+  margin-bottom: 1.75rem;
+}
+
+.template-picker button {
+  padding: 0.5rem 1.3rem;
+  border: 1px solid var(--ink);
+  background: transparent;
+  color: var(--ink);
+  border-radius: 2px;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.template-picker button.active {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.preview-frame {
+  overflow: auto;
+  border: 1px solid var(--hairline);
+  max-height: 600px;
+}
+
+.download-btn {
+  margin-top: 1.5rem;
+  padding: 0.7rem 1.6rem;
+  background: var(--cobalt);
+  color: white;
+  border: none;
+  border-radius: 2px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.download-btn:hover {
+  background: var(--ink);
+}
+
+.download-btn:disabled {
+  background: var(--hairline);
+  color: var(--slate);
+  cursor: not-allowed;
+}
