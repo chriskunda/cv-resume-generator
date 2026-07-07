@@ -3,7 +3,7 @@ import PersonalInfo from './components/PersonalInfo';
 import Education from './components/Education';
 import Experience from './components/Experience';
 import CVPreview from './components/CVPreview';
-import './styles/App.css';
+import './App.css';
 
 function App() {
   const [personalInfo, setPersonalInfo] = useState({ name: '', email: '', phone: '' });
